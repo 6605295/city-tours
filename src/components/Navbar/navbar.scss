@@ -1,0 +1,16 @@
+@import "../../index.scss";
+
+.navbar-nav {
+  a {
+    transition: $maintransition;
+    color: $mainwhite !important;
+    padding: 0 10rem !important;
+    font-size: 1.5rem !important;
+    &:hover {
+      color: $maingreen !important;
+    }
+  }
+  .active {
+    color: $maingreen !important;
+  }
+}

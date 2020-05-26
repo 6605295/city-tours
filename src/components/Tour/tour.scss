@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+@mixin icon {
+  font-size: 1.5rem;
+  color: $maingreen;
+  cursor: pointer;
+}
+.container {
+  background-color: $maingrey;
+  padding: 0px 0px 0px 0px !important;
+}
+.img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.fa-window-close {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 8%;
+  opacity: 0;
+  transition: $maintransition;
+  @include icon;
+}
+.left:hover .fa-window-close {
+  opacity: 1;
+}
+.fa-caret-square-o-down {
+  @include icon;
+}
+.right {
+  padding: 1rem 2rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+h5 {
+  text-transform: capitalize;
+}
